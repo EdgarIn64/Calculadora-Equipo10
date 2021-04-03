@@ -1,0 +1,153 @@
+* {
+	font-size: 1.1rem;
+}
+
+body{
+	margin: 10px;
+	background-image: url("../img/fondo.jpg");
+}
+
+h1{
+	text-align: center;
+	font-size: 3rem;
+	display: block;
+}
+
+h2{
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 2px;
+}
+
+#cabecera {
+	background: rgb(100, 50, 200);
+	border: 1px solid #999999;
+	padding: 10px;
+	color: rgb(240, 240, 240);
+	width: 80%;
+	text-align: center;
+	margin-left: 10%;
+	margin-bottom: 1%;
+}
+
+section{
+    background-color: rgba(248, 248, 248, 0.404);
+    margin-bottom: 100px;
+    margin-right: 25%;
+    margin-left: 10%;
+    width: 50%;
+    float: right;
+	min-width: 480px;
+}
+/*aspectos generales: bordes y color de fondo de calculadora*/
+.calculadora { 
+	border: 3px blue ridge; 
+	width: 100%;
+	text-align: center;
+    background-color: #62b9b6; 
+}
+
+.cambiar {
+	margin-left: 15px;
+}
+
+#textoAnterior {
+	width: 84%; 
+	height: 164px;
+	text-align: right;
+	position: relative; 
+	left: 30px;  
+	font-family: "courier new";
+	overflow: hidden;
+	padding: 5px 5px;
+}
+/*pantalla de visualización: bordes, posición, color de fondo, estilo letra.*/
+#textoPantalla { 
+	width: 84%; 
+	border: 2px black solid; 
+	text-align: right;
+    position: relative; 
+    left: 30px;  
+    padding: 5px 5px;
+    background-color: white; 
+    font-family: "courier new";
+    overflow: hidden;
+   	margin-bottom: 5px;
+}
+
+
+/*botones normales: anchura y margen*/
+.calculadora [type=button] { 
+	width: 75px;
+	height: 36px; 
+	padding: 0;
+}
+/*botones especiales*/
+.calculadora input.largo { 
+	color:#2f4eab; 
+	width: 120px; 
+}
+
+.calculadora input.ocultar { 
+	color: #2f4eab; 
+	width: 120px; 
+}
+
+.calculadora input.cambiar { 
+	color:#2f4eab; 
+	width: 125px; 
+	height: 35px;
+	font-size: 1.1rem;
+}
+
+.calculadora input{
+  box-shadow: 5px 4px 8px #646464;
+}
+section{
+	text-align: center;
+	display: block;
+	float: center;
+}
+
+.calculadora input:hover {
+  background: #2079b0;
+  background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+  text-decoration: none;
+  color: white;
+}
+
+p{
+	margin: 7;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+	margin-bottom: 15px;
+}
+
+#active{
+	    color: white;
+}
+
+li {
+    float: left;
+    padding-right: 15px;
+    font-size: 2rem;
+    color: white;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+    color: white;
+}
+
+a{
+    font-size: 1.7rem;
+	color: white;
+}
