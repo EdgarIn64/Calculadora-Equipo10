@@ -188,7 +188,18 @@ function especial(xx){
 }
 
 function radian(){
-  rad = true;
+  var sty = document.getElementById("radiante");
+  if(!rad) {
+    sty.style.backgroundColor = "#99BBEE";
+    sty.style.color = "#DFDFDF";
+    rad = true;
+  }
+  else{
+    sty.style.backgroundColor = "#EFEFEF";
+    sty.style.color = "#2f4eab";
+    rad = false; 
+  }
+
 }
 
 function trigo(xx){

@@ -28,16 +28,17 @@ h2{
 	text-align: center;
 	margin-left: 10%;
 	margin-bottom: 1%;
+	min-width: 770px;
 }
 
 section{
-    background-color: rgba(248, 248, 248, 0.404);
-    margin-bottom: 100px;
+    margin-bottom: 40px;
+    margin-left: 25%;
     margin-right: 25%;
-    margin-left: 10%;
     width: 50%;
-    float: right;
-	min-width: 480px;
+    float: left;
+    max-width: 700px;
+	min-width: 550px;
 }
 /*aspectos generales: bordes y color de fondo de calculadora*/
 .calculadora { 
@@ -103,11 +104,6 @@ section{
 .calculadora input{
   box-shadow: 5px 4px 8px #646464;
 }
-section{
-	text-align: center;
-	display: block;
-	float: center;
-}
 
 .calculadora input:hover {
   background: #2079b0;
@@ -124,30 +120,18 @@ p{
 	margin: 7;
 }
 
-.nav {
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-	margin-bottom: 15px;
+#menu{
+	text-align: center;
+	width: 25%;
 }
 
-#active{
-	    color: white;
-}
-
-li {
-    float: left;
-    padding-right: 15px;
-    font-size: 2rem;
+footer {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
     color: white;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-    color: white;
-}
-
-a{
-    font-size: 1.7rem;
-	color: white;
+    background-color: #7050DE;
+    clear: left;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
 }
