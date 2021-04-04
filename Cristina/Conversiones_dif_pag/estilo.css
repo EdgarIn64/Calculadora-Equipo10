@@ -1,0 +1,19 @@
+h1{
+	background-color: rgb(254,159,249)
+}
+.op{
+  background-color:#fff900;
+  border: groove;
+}
+.bin{
+  background-color:rgb(254,134,231);
+  border: dashed;
+}
+.hex{
+  background-color:#ae29f8;
+  border: outset;
+  color: white;
+}
+p{
+  background-color: #00ccff
+}

@@ -1,34 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Juego de Adivina n&uacute;mero</title>
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
-  </head>
-
-  <body>
-  	<header>
-	    <h1>Juego de Adivina n&uacute;mero</h1>
-	</header>
-
-	<section id="intento">
-	    <p>Se ha generado un valor de entre 1 y 100. Vea si puede adivinarlo en 10 turnos o menos. Le diremos si su estimación fue demasiado alta o demasiado baja.</p>
-
-	    <div class="form">
-	      <label for="campoAdivina">Ingrese el valor que piensa: </label>
-	      <input type="text" id="campoAdivina" class="campoAdivina">
-	      <input type="submit" value="Adivina" class="adivinaSubmit">
-	    </div>
-	</section>
-	<section id="resultado">
-	    <div class="resultParas">
-	      <p class="adivinanzas"></p>
-	      <p class="ultimoResultado"></p>
-	      <p class="bajoOAlto"></p>
-	    </div>   
-	</section>
-
-    <script>
       var randomNumber = Math.floor(Math.random() * 100) + 1;
       const adivinanzas = document.querySelector('.adivinanzas');
       const ultimoResultado = document.querySelector('.ultimoResultado');
@@ -39,8 +8,8 @@
       var resetButton;
       var cambiar = 1;
 
-      function checaAdivinanza() {
-        var AdivinanzaUsuario = Number(campoAdivina.value);
+      function checaAdivinanza(num) {
+        var AdivinanzaUsuario = Number(num.value);
         if (contadorAdivinanzas ==1) {
           adivinanzas.textContent = 'Adivinanzas Previas: ';
         }
@@ -54,7 +23,6 @@
           ultimoResultado.textContent = 'Felicidades! Estás en lo correcto!';
           ultimoResultado.style.backgroundColor = 'green';
           ultimoResultado.style.fontSize = "2rem";
-          imagen('img/win.gif')
           bajoOAlto.textContent = '';
           empezarJuego();
         } else if (contadorAdivinanzas == 10) {
@@ -71,11 +39,11 @@
           if(AdivinanzaUsuario < randomNumber) {
             bajoOAlto.textContent = 'El último número es demasiado bajo!';
             limpiar();
-            imagen('img/tooDown.jpg');
+            imagen('../img/tooDown.jpg');
           } else if(AdivinanzaUsuario > randomNumber) {
             bajoOAlto.textContent = 'El último númer es demasiado alto!';
           	limpiar();
-          	imagen('img/tooUp.jpg');
+          	imagen('../img/tooUp.jpg');
           }
         }
         ultimoResultado.style.textAlign = "center";
@@ -135,6 +103,7 @@
         for(var i = 0 ; i < resetParas.length ; i++) {
           resetParas[i].textContent = '';
         }
+
         resetButton.parentNode.removeChild(resetButton);
         campoAdivina.disabled = false;
         adivinaSubmit.disabled = false;
@@ -142,10 +111,6 @@
         campoAdivina.focus();
         ultimoResultado.style.backgroundColor = 'rgb(147, 164, 238)';
         adivinanzas.style.backgroundColor = 'rgb(147, 164, 238)';
-    		bajoOAlto.style.backgroundColor = 'rgb(147, 164, 238)';        
+		    bajoOAlto.style.backgroundColor = 'rgb(147, 164, 238)';        
         randomNumber = Math.floor(Math.random() * 100) + 1;
       }
-    </script>
-    <a href="../edgarIndex.html"><img id="menu" src="../../img/Regresar.png" width="25%"></a>
-  </body>
-</html>

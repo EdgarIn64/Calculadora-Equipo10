@@ -1,0 +1,78 @@
+*{
+	padding:0px;
+				margin:0px;
+				
+
+}
+body{ 
+background:url("../img/Banner.jpeg"); background-attachment: fixed;
+ background-repeat: no-repeat;
+  background-size: cover;
+  }		
+
+
+#header{
+				margin:auto;
+				width:1000px ;
+				font-family: helvetica;
+}
+ul{
+				list-style: none;
+}
+.nav li a{
+							
+									background-color: #80c1ff;
+							text-decoration:none;
+							padding:10px 15px;
+							display:block;
+							border:1px;										
+							
+				}
+.nav > li{
+				float:left;
+}
+
+.nav li a:hover{
+			background-color: grey;
+			}
+		.nav > li{
+				float:left;
+}	
+.nav li ul{
+				display:none;
+ position:absolute;
+ main-width:140px;
+ }
+ .nav li:hover>ul{
+ 				display:block;
+ }
+ 	.nav li	ul li{
+ 					position:realtive;
+ 	}	
+ .nav li ul li ul{
+ 				right=-140px;
+ 				top:0;
+ }
+h1{
+				color:white;
+				font-family:cursive;
+				font-size:2rem;
+			
+				
+}
+h2{
+				font-size:1rem;
+				color:white;
+}
+#info{
+				padding:10px
+}
+#words{
+				border:10px
+}
+h3{
+				color:white;
+}		
+p{
+				color:white;
+}						

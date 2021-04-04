@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Conversor de numeros">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conversor en diferentes páginas</title>
+	<script type="text/javascript" src="convertir.js"></script>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<h1>Convertidor de números decimales</h1>
+</head>
+<body>
+	<header>
+		<h2>Convertir a binario</h2>
+	</header>
+
+	<form >
+		<label >Ingrese el numero</label>
+		<input type="text"   id="num" name="numero" value="">
+		<button type="button" class="bin" onclick="binario(num.value);">Convertir</button>
+		<br>
+		<button type="button" class="bin" onclick="limpiar();">Limpiar Todo</button>
+		<input type="button" class="bin" onclick="cierra();" value="Cerrar"/>
+		<br>
+		
+	</form>
+
+</body>
+</html>
