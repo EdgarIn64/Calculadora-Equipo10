@@ -1,0 +1,155 @@
+*{
+    font-family: Verdana,Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header,nav,section,article,footer,aside{
+    display: block;
+}
+
+ul {
+    list-style-type: none;/*desactiva viñetas*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /*Especifica qué sucede si el contenido
+    del cuadro de un elemento se desborda */
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover { /*Cuando pasa el mouse sobre el elemento*/
+    background-color: #e092a9;
+    color:#333;
+}
+
+li a:active { /*Cuando da click en el mouse */
+    background-color: #ae69c3;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+li:last-child{
+float: right;
+background-color: rgba(106, 116, 116, 0.69);
+color:white;
+}
+
+body{
+    background-color: rgb(255, 100, 167);
+}
+header{
+    background-image: url("../img/portada1.jpg");
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    margin:0px;
+    left: 0;
+    text-align: center;
+} 
+h1{
+    font-size: 3.5rem;
+    text-shadow: rgb(214, 93, 158) 4px 4px;
+    color:rgba(0, 0, 0, 0.76);
+    text-transform: uppercase;
+}
+h2{
+    text-shadow: rgb(182, 46, 46) 2px 2px;
+    color:rgb(251, 10, 10);
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+#seccion{
+    background-color: rgba(248, 179, 179, 0.719);
+    float: left;
+    margin: 30px 0px 50px 90px;
+    text-align: center;
+    width: 55%;
+    height: 50%;
+    padding: 1rem;
+    border-top-right-radius: 80px;
+    border-top-left-radius: 80px;
+    
+}
+span{
+    font-weight: bold;
+    color:rgb(187, 2, 39);
+}
+p{ 
+    text-align: justify;
+    font-style: italic;
+    font-size: 1.5rem;
+    margin:2rem;
+}
+
+h3{
+    font-size: 1.7rem;
+    margin: 1rem;
+}
+
+#columna {
+    text-align: center;
+    float: right;
+    width: 30%;
+    height: 50%;
+    margin: 20px 90px 20px 0px;
+    padding: 20px;
+    background: #b90674;
+    margin-bottom: 70px;
+    flex-wrap: wrap; 
+    border-radius: 10px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #ff0867;
+    background-color: rgba(236, 12, 87, 0.876);
+    left: 0;
+    bottom: 0;
+    color:white;
+}
+.foto{
+    display: block;
+    width:50%;
+    height: 50%;
+    border-radius: 20px;
+    border:purple 4px solid;
+    margin-left: 185px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.gif_bonito{
+    display: block;
+    width: 70%;
+    height: 70%;
+    margin-top: 20px;
+    margin-left: 3.8rem;
+}
+blockquote{
+    color:white;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 1rem;
+    text-shadow: rgb(5, 5, 5) 4px 4px;
+}
+
+footer a:hover{
+    background-color: #000000;
+    color:rgb(255, 251, 0);
+}
+

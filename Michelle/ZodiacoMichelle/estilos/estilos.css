@@ -1,0 +1,40 @@
+p {
+    color: white;
+    font-size:1.8rem;
+    font-weight: bold;
+    text-shadow: rgb(122, 122, 122) 2px 2px;
+}
+#boton{
+    background-color: rgb(255, 255, 255);
+    margin-left: 20px;
+    width: 130px;
+    height: 25px;
+    color:black;
+    
+    border-radius: 10px;
+}
+#boton:hover{
+    background-color: rgba(255, 255, 255, 0.513);
+}
+
+a{ 
+    display: block;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;  
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border: rgb(0, 0, 0) 3px solid;
+    color:#ffffff;
+    padding: 5px;
+    background-color: black;
+} 
+a:hover{
+    color:rgb(255, 255, 255);
+    background-color: rgba(199, 21, 51, 0.952);
+    border: rgb(199, 21, 51) 3px solid;
+}

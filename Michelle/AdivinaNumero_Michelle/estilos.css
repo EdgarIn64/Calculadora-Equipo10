@@ -1,0 +1,73 @@
+
+html {
+    font-family: sans-serif;
+}
+body {
+    background-color: blanchedalmond;
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+}
+h1{
+    color: crimson;
+    text-shadow: darkgray 2px 2px;
+    text-align: center;
+}
+#indicacion{
+    color:rgb(148, 7, 35);
+    font-weight: bold;
+    text-align: justify;
+}
+
+div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+}
+label{
+    color:rgb(199, 54, 2);
+    font-weight: bold;
+    font-size: 1rem;
+}
+.form{
+    padding: 5px;
+}
+#boton{
+    width: 8rem;
+    height: 2rem;
+    margin-left: 50px;
+    color:rgb(255, 232, 190);
+    font-size: .9rem;
+    background-color: rgb(199, 54, 2);
+    border: none;
+    border-radius: 10px 10px;
+}
+#boton:hover{
+    background-color: rgba(199, 54, 2, 0.774);
+}
+
+#regresar{
+    display: block;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    margin-top: 1rem; 
+  }
+  #regresar a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border: rgb(0, 0, 0) 3px solid;
+    color:#ffffff;
+    padding: 5px;
+    background-color: black;
+  }
+  #regresar a:hover{
+    color:rgb(255, 255, 255);
+    background-color: rgba(199, 21, 51, 0.952);
+    border: rgb(199, 21, 51) 3px solid;
+  }

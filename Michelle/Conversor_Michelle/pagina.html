@@ -1,0 +1,163 @@
+<!DOCTYPE >
+<head>
+<title>Tarea: Convertidor</title>  
+<style>
+*{
+    box-sizing: border-box;
+ }   
+body{
+    background-color:#fda77f;
+}
+div, header{
+    display: block;
+}
+header{
+    background-color: rgb(250, 111, 60);
+    width: auto;
+    height: 100px;
+    padding: 10px;
+    margin:0px;
+    left: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color:moccasin;
+    text-shadow: #000000 2px 2px;
+    margin-bottom: 15px;
+}
+#cuadro_binario, #cuadro_hexadecimal{
+   width:47%;
+   height:50%;
+   border: silver 3px solid;
+   text-align: center;
+   background-color: rgba(255, 116, 144, 0.507);
+   border-radius: 10px;
+   color:rgba(0, 0, 0, 0.76);
+}
+
+#cuadro_binario{
+   float: left;
+   margin-left: 10px;
+}
+#cuadro_hexadecimal{
+    float: right;
+    margin-right: 10px;
+}
+
+h2{
+    font-size: 2rem;
+    text-shadow: #ff9869 4px 4px;
+    color:rgba(0, 0, 0, 0.76);
+}
+p{
+    color: darkred;
+    font-weight: bolder;
+    font-size: 1rem;
+    padding: 3px;
+    margin: 0px;
+}
+#regresar{
+    
+    float: left;
+    margin-top: 3rem;
+ 
+  }
+  #regresar a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border: rgb(0, 0, 0) 3px solid;
+    color:#ffffff;
+    padding: 5px;
+    background-color: black;
+  }
+  #regresar a:hover{
+    color:rgb(255, 255, 255);
+    background-color: rgba(199, 21, 51, 0.952);
+    border: rgb(199, 21, 51) 3px solid;
+  }
+
+</style>
+
+</head>  
+<body>
+    <header>
+        <h1>Convertidor de numeros decimales a binario y hexadecimal</h1>
+    </header>
+   
+  <form >
+     <label >Introduce el numero</label>
+     <input type="text" id="texto"name="numero" value="">
+     <button type="button" id="bin" onclick="conversion_bin(numero.value)">Convertir a binario</button>
+     <button type="button" id="hex" onclick="conversion_hex(numero.value)">Convertir a hexadecimal</button>
+     <button type="button" onclick="limpiar()">Limpiar Todos</button>
+    </form>
+
+  <div id="cuadro_binario">
+    <h2>Binario</h2>
+  </div>
+  <div id="cuadro_hexadecimal">
+    <h2>Hexadecimal</h2>
+  </div> 
+
+  <div id="regresar"> 
+    <a href="../submenuMichelle.html">Regresar al submenu</a>
+  </div>
+
+<script type="text/javascript" >
+    
+    function conversion_bin(numero){
+        binario="";
+        dato=numero;
+        numero=parseInt(numero,10);
+        while(numero!=0){
+            res=numero%2;
+            numero=Math.trunc(numero/2);
+            binario=""+res+binario;
+            console.log(binario);
+        }
+        parrafo = document.createElement("p");
+        contenido = document.createTextNode("El número "+dato+" se convertira a binario... "+binario);  
+        parrafo.appendChild(contenido);
+        document.getElementById("cuadro_binario").appendChild(parrafo);
+        document.getElementById("texto").value="";
+    }
+
+    function conversion_hex(numero){
+        
+        let dato=numero;
+        let dig=0;
+        let hexadecimal="";
+        digitos =["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"];
+	        if (numero != 0)
+	        while (numero > 0) {
+	            dig = numero % 16;
+                dig=Math.trunc(dig);
+	            hexadecimal = digitos[dig]+hexadecimal; 
+	            numero = numero / 16;
+                numero=Math.trunc(numero);
+                console.log(numero);
+	        }
+
+        parrafo = document.createElement("p");
+        contenido = document.createTextNode("El número "+dato+" se convertira a hexadecimal.. "+hexadecimal);  
+        parrafo.appendChild(contenido);
+        document.getElementById("cuadro_hexadecimal").appendChild(parrafo);
+        document.getElementById("texto").value=" ";
+    }
+
+    function limpiar(){
+        lista=document.querySelectorAll('p');
+
+        if(lista.length!=0){
+            i=lista.length-1;
+            while(i>-1)
+            lista[i].parentNode.removeChild(lista[i--]);
+        }
+        else alert("No hay parrafos para eliminar");
+    }
+
+</script>
+
+</body>
+</html>
